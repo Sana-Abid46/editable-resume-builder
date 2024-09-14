@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div>
+        <h1>Editable Resume Builder by Sana Abid</h1>
+        <form id="resume-form">
+
+            <!-- personal info -->
+
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name"  required />
+                <label for="name">Email:</label>
+                <input type="email" id="email" email="email"  required />
+                <label for="name">Phone:</label>
+                <input type="tel" id="Phone" name="Phone"  required />
+            </fieldset>
+
+            <!-- Education -->
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="Education">Education</label>
+                <textarea name="Education" id="Education" rows="4" required></textarea>
+                <br/>
+            </fieldset>
+
+            <!-- Experience -->
+
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Experience</label>
+                <textarea name="experience" id="experience" rows="4" required></textarea>
+                <br/>
+            </fieldset>
+
+            <!-- skills -->
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">skills</label>
+                <textarea name="skills" id="skills" rows="4" required></textarea>
+                <br/>
+            </fieldset>
+            <button id="btn" type="submit">Generate Resume</button>
+            
+        </form>
+        
+        <div id="resume-output"></div>
+        <button id="edit-btn">Edit</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
